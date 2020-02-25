@@ -8,11 +8,12 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "ava": "^2.1.0",
     "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
     "core-js": "^3.1.4",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
+    "mocha": "^7.0.1",
     "regenerator-runtime": "^0.13.2",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4"
@@ -20,12 +21,10 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "test": "ava --verbose"
+    "test": "mocha --watch"
   },
-  "ava": {
-    "require": [
-      "@babel/register"
-    ]
+  "mocha": {
+    "require": "@babel/register"
   },
   "author": "mostlyfine",
   "license": "ISC"
