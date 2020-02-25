@@ -1,0 +1,20 @@
+{
+    "root": true,
+    "extends": ["eslint:recommended"],
+    "plugins": [],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "es2017": true,
+      "node": true,
+      "browser": true
+    },
+    "globals": {},
+    "rules": {
+      "indent": [2, 2],
+      "linebreak-style": [2, "unix"],
+      "semi": [2, "always"]
+    }
+}
